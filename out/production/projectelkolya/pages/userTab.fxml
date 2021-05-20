@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="user" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserView">
+   <children>
+      <Label layoutX="570.0" layoutY="68.0" prefHeight="25.0" prefWidth="80.0" text="Username" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="570.0" layoutY="93.0" prefHeight="37.0" prefWidth="240.0" />
+      <TextField layoutX="570.0" layoutY="159.0" prefHeight="37.0" prefWidth="240.0" />
+      <Label layoutX="11.0" layoutY="23.0" prefHeight="27.0" prefWidth="51.0" text="Role :" textFill="#070707" wrapText="true">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="55.0" prefHeight="27.0" prefWidth="51.0" text="State :" textFill="#171717" wrapText="true">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Label>
+      <TextField layoutX="570.0" layoutY="285.0" prefHeight="37.0" prefWidth="240.0" />
+      <TextField layoutX="570.0" layoutY="517.0" prefHeight="37.0" prefWidth="240.0" />
+      <TextField layoutX="570.0" layoutY="585.0" prefHeight="37.0" prefWidth="240.0" />
+      <TextField layoutX="570.0" layoutY="649.0" prefHeight="37.0" prefWidth="240.0" />
+      <Label layoutX="570.0" layoutY="622.0" prefHeight="27.0" prefWidth="74.0" text="Phone no." textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="573.0" layoutY="356.0" prefHeight="27.0" prefWidth="74.0" text="Birth Date" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="570.0" layoutY="134.0" prefHeight="25.0" prefWidth="80.0" text="First name" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="570.0" layoutY="220.0" prefHeight="37.0" prefWidth="240.0" />
+      <Label layoutX="570.0" layoutY="196.0" prefHeight="25.0" prefWidth="80.0" text="Last name" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="570.0" layoutY="257.0" prefHeight="25.0" prefWidth="80.0" text="Age" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="570.0" layoutY="491.0" prefHeight="25.0" prefWidth="80.0" text="Email" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="570.0" layoutY="560.0" prefHeight="25.0" prefWidth="80.0" text="Address" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="573.0" layoutY="408.0" prefHeight="27.0" prefWidth="74.0" text="Gender" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="650.0" layoutY="409.0" prefHeight="25.0" prefWidth="119.0" />
+      <Label contentDisplay="CENTER" layoutX="570.0" layoutY="23.0" prefHeight="45.0" prefWidth="240.0" text="User info." textAlignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="570.0" layoutY="445.0" prefHeight="45.0" prefWidth="240.0" text="Contact info." textAlignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField layoutX="55.0" layoutY="649.0" prefHeight="37.0" prefWidth="284.0" />
+      <TextField layoutX="55.0" layoutY="517.0" prefHeight="37.0" prefWidth="284.0" />
+      <TextField layoutX="55.0" layoutY="586.0" prefHeight="37.0" prefWidth="284.0" />
+      <Label layoutX="55.0" layoutY="491.0" prefHeight="25.0" prefWidth="149.0" text="Current Password" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="560.0" prefHeight="25.0" prefWidth="149.0" text="New Password" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="623.0" prefHeight="25.0" prefWidth="149.0" text="Repeat New Password" textFill="#171717">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="28.0" text="Label" />
+      <Label layoutX="48.0" layoutY="60.0" text="Label" />
+      <DatePicker layoutX="650.0" layoutY="356.0" prefHeight="27.0" prefWidth="178.0" />
+      <ImageView fitHeight="204.0" fitWidth="205.0" layoutX="102.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/icons/Profile-Male-PNG.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="user" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="885.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UsersView">
+   <children>
+      <TableView fx:id="Usertable" layoutX="83.0" layoutY="33.0" onMouseClicked="#test" prefHeight="679.0" prefWidth="885.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+        <columns>
+          <TableColumn fx:id="col_ID" prefWidth="51.0" text="ID" />
+          <TableColumn fx:id="col_Fname" prefWidth="65.0" text="Fname" />
+            <TableColumn fx:id="col_Lname" prefWidth="59.0" text="Lname" />
+            <TableColumn fx:id="col_Gender" prefWidth="39.0" text="Gender" />
+            <TableColumn fx:id="col_Address" prefWidth="90.0" text="Address" />
+            <TableColumn fx:id="col_Bdate" prefWidth="61.0" text="Bdate" />
+            <TableColumn fx:id="col_Phone" prefWidth="62.0" text="Phone" />
+            <TableColumn fx:id="col_Username" prefWidth="79.0" text="UserName" />
+            <TableColumn fx:id="col_Password" prefWidth="66.0" text="Password" />
+            <TableColumn fx:id="col_Email" prefWidth="169.0" text="Email" />
+            <TableColumn fx:id="col_State" prefWidth="66.0" text="State" />
+            <TableColumn fx:id="col_actions" prefWidth="77.0" text="Actions" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

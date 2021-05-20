@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: lightgrey; -fx-background-size: 1200 900;             -fx-border-width: 5; -fx-padding: 40px; -fx-effect: dropshadow( gaussian , black , 5,0,1,2);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginpageController">
+
+    <AnchorPane fx:id="sign_in" layoutX="600.0" prefHeight="750.0" prefWidth="600.0" style="-fx-background-color: white;">
+        <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="173.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../icons8-name-100.png" />
+        </ImageView>
+        <JFXTextField alignment="CENTER" labelFloat="true" layoutX="164.0" layoutY="391.0" onAction="#getUsername" prefHeight="55.0" prefWidth="273.0" text="Username">
+            <font>
+                <Font name="Agency FB" size="20.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField alignment="CENTER" cache="true" cacheHint="QUALITY" layoutX="173.0" layoutY="462.0" onAction="#getPassword" prefHeight="55.0" prefWidth="273.0" text="Password">
+            <font>
+                <Font name="Agency FB" size="20.0" />
+            </font>
+        </JFXTextField>
+        <ImageView fitHeight="30.0" fitWidth="37.0" layoutX="177.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../icons8-password-50.png" />
+        </ImageView>
+        <ImageView fitHeight="280.0" fitWidth="326.0" layoutX="137.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+            <rotationAxis>
+                <Point3D y="2.0" z="30.0" />
+            </rotationAxis>
+            <Image url="@../Resources/loginpage/Component-3-1%20(2).png" />
+        </ImageView>
+        <JFXButton fx:id="signIn" alignment="CENTER" layoutX="169.0" layoutY="568.0" onAction="#sigin_action" prefHeight="55.0" prefWidth="273.0" ripplerFill="WHITE" style="-fx-background-color: #104b85; -fx-text-fill: white; -fx-graphic-text-gap: 20px; -fx-effect: dropshadow( gaussian , #E4EAF1 , 5,0,1,6);" text="Sign in" textAlignment="CENTER">
+            <font>
+                <Font name="Agency FB Bold" size="25.0" />
+            </font>
+
+            <rotationAxis>
+                <Point3D y="2.0" z="30.0" />
+            </rotationAxis>
+        </JFXButton>
+        <Accordion layoutX="169.0" layoutY="62.0" />
+    </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+          <ImageView fitHeight="750.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 70%;">
+              <Image url="@../Resources/loginpage/WhatsApp%20Image%202020-12-21%20at%2010.42.59%20PM.jpeg" />
+          </ImageView>
+         <JFXButton fx:id="sign_up" alignment="CENTER" layoutX="169.0" layoutY="568.0" onAction="#signup_action" prefHeight="55.0" prefWidth="273.0" ripplerFill="#5579d7" style="-fx-background-color: white; -fx-text-fill: #104b85; -fx-graphic-text-gap: 20px;" text="Create account" textAlignment="CENTER">
+            <font>
+               <Font name="Agency FB Bold" size="25.0" />
+            </font>
+         </JFXButton>
+      </children>
+   </AnchorPane>
+</AnchorPane>

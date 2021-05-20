@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="users" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Assignmentstabs">
+   <children>
+      <TableView fx:id="assignmentTable" layoutY="61.0" onMouseClicked="#getData" prefHeight="417.0" prefWidth="880.0" style="-fx-background-color: white;">
+         <columns>
+            <TableColumn fx:id="title" prefWidth="277.0" text="Title" />
+            <TableColumn fx:id="deadline" prefWidth="308.0" text="Deadline" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="viewSubject" layoutX="14.0" layoutY="14.0" onAction="#showMenu" prefWidth="150.0" style="-fx-background-color: transpernat; -fx-border-color: black;" />
+      <HBox layoutY="478.0" prefHeight="113.0" prefWidth="880.0" style="-fx-background-color: #e3efff;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="478.0">
+         <children>
+            <AnchorPane prefHeight="113.0" prefWidth="282.0">
+               <children>
+                  <Button fx:id="Add_course" layoutX="66.0" layoutY="35.0" mnemonicParsing="false" onAction="#popUpWindowAdd" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #60e05a;" text="ADD ASSIGNMENT" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="43.0" layoutY="10.0" prefHeight="113.0" prefWidth="472.0">
+               <children>
+                  <Button fx:id="Edit_course" layoutX="62.0" layoutY="35.0" mnemonicParsing="false" onAction="#popUpWindowEdit" prefHeight="43.0" prefWidth="195.0" style="-fx-background-color: #d9ae3b;" text="EDIT" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="243.0" layoutY="10.0" prefHeight="113.0" prefWidth="223.0">
+               <children>
+                  <Button fx:id="Remove" layoutX="-14.0" layoutY="35.0" mnemonicParsing="false" onAction="#removeAction" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #d43e2a;" text="REMOVE" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="443.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+         <padding>
+            <Insets left="35.0" right="35.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
