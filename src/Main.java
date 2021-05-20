@@ -19,7 +19,7 @@ public class Main extends Application {
        Scene login_page = new Scene(root);
        primaryStage.setScene(login_page);
 
-
+    // koko
         primaryStage.show();
 
 
